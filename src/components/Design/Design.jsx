@@ -2,7 +2,7 @@ import React from "react";
 import design from "../../images/design.png";
 import inst from "../../images/Social icon.svg";
 import pint from "../../images/Social icon 2.svg";
-/*import Gallery from "../Gallery/Gallery";*/
+import Gallery from "../Gallery/Gallery";
 
 
 
@@ -30,7 +30,7 @@ function Design() {
         <div className="look">
            
           <div className="look__gallery">
-    
+    <Gallery/>
           </div>
         </div>
       </section>
