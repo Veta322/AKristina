@@ -1,8 +1,10 @@
 import React from "react";
 import ImageSlider from "../ImageSlider/ImageSlider";
 import ImageSliderBig from "../ImageSlider/ImageSliderBig";
+import { useTranslation } from 'react-i18next';
 
 function ArtCard() {
+  const { t } = useTranslation();
   const slidesTigor = [
     { url: "https://i.ibb.co/L6Qmz4T/tigor.png" },
     { url: "https://i.ibb.co/pn3FbBw/tigor-interier.png" },
@@ -90,9 +92,9 @@ function ArtCard() {
           </div>
         </div>
         <div className="card__description">
-          <h2 className="card__title">Тигр, 2023</h2>
+          <h2 className="card__title">{t('tigr')}, 2023</h2>
           <p className="card__text">
-            Артборд, барельеф, акрил, поталь, ювелирная смола
+          {t('tigr about')}
           </p>
           <p className="card__size">120х80</p>
           <p className="card__price">70.000 ₽</p>
@@ -106,10 +108,9 @@ function ArtCard() {
           </div>
         </div>
         <div className="card__description">
-          <h2 className="card__title">Чёрный пион, 2023</h2>
+          <h2 className="card__title">{t('pion')}, 2023</h2>
           <p className="card__text">
-            Артборд, барельеф, акрил, поталь, ювелирная смола, золочение,
-            стразы, горный хрусталь
+          {t('pion about')}
           </p>
           <p className="card__size">120х80</p>
           <p className="card__price">75.000 ₽</p>
@@ -123,10 +124,9 @@ function ArtCard() {
           </div>
         </div>
         <div className="card__description">
-          <h2 className="card__title">Мать и дитя, 2023</h2>
+          <h2 className="card__title">{t('mama')}, 2023</h2>
           <p className="card__text">
-            Артборд, барельеф, акрил, поталь, ювелирная смола, золочение,
-            стразы, горный хрусталь
+          {t('mama about')}
           </p>
           <p className="card__size">120х80</p>
           <p className="card__price">75.000 ₽</p>
@@ -140,9 +140,9 @@ function ArtCard() {
           </div>
         </div>
         <div className="card__description">
-          <h2 className="card__title">Орёл, 2023</h2>
+          <h2 className="card__title">{t('orel')}, 2023</h2>
           <p className="card__text">
-            Артборд, барельеф, акрил, поталь, ювелирная смола
+          {t('orel about')}
           </p>
           <p className="card__size">120х80</p>
           <p className="card__price">70.000 ₽</p>
@@ -156,9 +156,9 @@ function ArtCard() {
           </div>
         </div>
         <div className="card__description">
-          <h2 className="card__title">Лев, 2023</h2>
+          <h2 className="card__title">{t('lev')}, 2023</h2>
           <p className="card__text">
-            Артборд, барельеф, акрил, поталь, ювелирная смола
+          {t('lev about')}
           </p>
           <p className="card__size">120х80</p>
           <p className="card__price">70.000 ₽</p>
@@ -172,9 +172,9 @@ function ArtCard() {
           </div>
         </div>
         <div className="card__description">
-          <h2 className="card__title">Золотой Орёл, 2023</h2>
+          <h2 className="card__title">{t('gold orel')}, 2023</h2>
           <p className="card__text">
-            Артборд, барельеф, акрил, поталь, ювелирная смола
+          {t('gold orel about')}
           </p>
           <p className="card__size">120х80</p>
           <p className="card__price">70.000 ₽</p>
@@ -188,9 +188,9 @@ function ArtCard() {
           </div>
         </div>
         <div className="card__description_big">
-          <h2 className="card__title">Бабочка, 2023</h2>
+          <h2 className="card__title">{t('butterfly')}, 2023</h2>
           <p className="card__text">
-            Артборд, барельеф, акрил, поталь, ювелирная смола
+          {t('butterfly about')}
           </p>
           <p className="card__size">120х80</p>
           <p className="card__price">70.000 ₽</p>
@@ -203,8 +203,8 @@ function ArtCard() {
           </div>
         </div>
         <div className="card__description">
-          <h2 className="card__title">Золотой Тигр, 2023</h2>
-          <p className="card__text">Артборд, барельеф, акрил, поталь</p>
+          <h2 className="card__title">{t('gold tigr')}, 2023</h2>
+          <p className="card__text">{t('gold tigr about')}</p>
           <p className="card__size">120х80</p>
           <p className="card__price">70.000 ₽</p>
         </div>
@@ -217,10 +217,9 @@ function ArtCard() {
           </div>
         </div>
         <div className="card__description">
-          <h2 className="card__title">Змея, 2023</h2>
+          <h2 className="card__title">{t('snake')}, 2023</h2>
           <p className="card__text">
-            Артборд, барельеф, акрил, поталь, стразы, ювелирная смола, горный
-            хрусталь
+          {t('snake about')}
           </p>
           <p className="card__size">120х80</p>
           <p className="card__price">70.000 ₽</p>
@@ -234,9 +233,9 @@ function ArtCard() {
           </div>
         </div>
         <div className="card__description">
-          <h2 className="card__title">Лилия, 2023</h2>
+          <h2 className="card__title">{t('lilia')}, 2023</h2>
           <p className="card__text">
-            Артборд, барельеф, акрил, поталь, ювелирная смола, золочение, стразы
+          {t('lilia about')}
           </p>
           <p className="card__size">120х80</p>
           <p className="card__price">75.000 ₽</p>
@@ -250,9 +249,9 @@ function ArtCard() {
           </div>
         </div>
         <div className="card__description">
-          <h2 className="card__title">Золотой Лабиринт, 2023</h2>
+          <h2 className="card__title">{t('gold labirint')}, 2023</h2>
           <p className="card__text">
-            Артборд, барельеф, акрил, поталь, ювелирная смола
+          {t('gold labirint about')}
           </p>
           <p className="card__size">100х70</p>
           <p className="card__price">50.000 ₽</p>
@@ -266,9 +265,9 @@ function ArtCard() {
           </div>
         </div>
         <div className="card__description_big">
-          <h2 className="card__title">Ирисы, 2023</h2>
+          <h2 className="card__title">{t('iris')}, 2023</h2>
           <p className="card__text">
-            Артборд, барельеф, акрил, поталь, ювелирная смола, горный хрусталь
+          {t('iris about')}
           </p>
           <p className="card__size">120х80</p>
           <p className="card__price">70.000 ₽</p>
@@ -281,8 +280,8 @@ function ArtCard() {
           </div>
         </div>
         <div className="card__description">
-          <h2 className="card__title">Золотой Жук, 2023</h2>
-          <p className="card__text">Артборд, барельеф, акрил, поталь</p>
+          <h2 className="card__title">{t('zhuk')}, 2023</h2>
+          <p className="card__text">{t('zhuk about')}</p>
           <p className="card__size">100х70</p>
           <p className="card__price">50.000 ₽</p>
         </div>

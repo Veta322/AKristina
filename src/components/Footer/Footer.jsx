@@ -2,24 +2,26 @@ import React from "react";
 import inst from "../../images/Social icon.svg";
 import pint from "../../images/Social icon 2.svg";
 import { Link } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
 
 function Footer() {
+  const { t } = useTranslation();
   return (
     <><section className="footer footer__full">
 
       <nav className="footer__top">
         <div className="footer__links">
           <Link to="/contact" className="footer__link">
-            Контакт
+          {t('Contact')}
           </Link>
           <Link to="/delivery" className="footer__link">
-            Доставка
+          {t('Deleviery')}
           </Link>
           <Link to="/cooperation" className="footer__link">
-            Сотрудничество
+          {t('Coop')}
           </Link>
           <Link to="/order" className="footer__link">
-            Заказать Картину
+          {t('Order')}
           </Link>
         </div>
         <div className="footer__icons">

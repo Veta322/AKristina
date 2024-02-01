@@ -1,8 +1,7 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCoverflow, Pagination, Navigation } from 'swiper';
-
-
+import { useTranslation } from 'react-i18next';
 
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
@@ -25,12 +24,13 @@ function Gallery() {
   }  if (screenWidth <= 480) {
     slidesPerView = 1;
   }
-
+  const { t } = useTranslation();
   return (
+
     <div className="container">
           <div className="look__top">
           <div className="title__container">
-            <h1 className="look__title">ЛУКБУК</h1>
+            <h1 className="look__title">{t('look')}</h1>
           </div>
           <div className="look__arrows">
             <img className="look__arrow_left" src={arrow} alt="arrow" />

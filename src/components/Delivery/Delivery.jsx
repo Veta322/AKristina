@@ -1,25 +1,24 @@
 import React from "react";
+import { useTranslation } from 'react-i18next';
 
 function Delivery() {
+  const { t } = useTranslation();
   return (
     <section className="delivery">
       
       <ol className="delivery__content">
-      <h1 className="delivery__title">ДОСТАВКА</h1>
+      <h1 className="delivery__title">{t('deleveiry')}</h1>
         <li className="delivery__el">
-          Продаем и доставляем произведения искусства по всему миру{" "}
+        {t('del el1')}{" "}
         </li>
         <li className="delivery__el">
-          Почтовые расходы или доставка, упаковка за счет покупателя
+        {t('del el2')}
         </li>
         <li className="delivery__el">
-          Ваш заказ может облагаться пошлинами и налогами, которые применяются в
-          вашей стране рекомендуем связаться с местной таможней перед
-          размещением заказа
+        {t('del el3')}
         </li>
         <li className="delivery__el">
-          Все применимые расходы на доставку, если не оговорено иное, должны
-          быть произведены до того, как мы отправим Вам товар{" "}
+        {t('del el4')}{" "}
         </li>
       </ol>
 

@@ -7,7 +7,6 @@
     top: 0;
     right: 0;
     left: 0;
-
     background: #9CA3AF;
     padding: 0;
     transform: translateX(100%);
@@ -30,7 +29,7 @@
 .header__burger {
     margin: 0;
     padding: 0;
- 
+    background: url("../../images/burger.svg") no-repeat center;
     width: 60px;
     height: 40px;
 }
@@ -78,7 +77,11 @@
     font-style: normal;
     font-weight: 500;
     line-height: 44px;
+    border: none;
+    background: none;
+    color: white;
 }
+
 
 .header__search {
     background: url("../../images/поиск.svg") no-repeat center;
