@@ -55,11 +55,15 @@
 .card__circle {
     position: relative;
     z-index: 5;
-    background-color: black;
+    background-color:#9CA3AF;
     width: 20px;
     height: 20px;
     display: block;
     border-radius: 100%;
+}
+
+.card__circle:active {
+    background-color:black;
 }
 
 .card__description {
